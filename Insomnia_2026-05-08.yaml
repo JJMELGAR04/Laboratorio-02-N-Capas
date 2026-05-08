@@ -1,0 +1,148 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Laboratorio2
+meta:
+  id: wrk_9162651cf5cb4119ae5ddd24e9beff8d
+  created: 1778280927361
+  modified: 1778280927361
+  description: ""
+collection:
+  - url: http://localhost:8080/api/pirates
+    name: Post
+    meta:
+      id: req_a40149b6a6e24b1ca6d52fbf077b6c33
+      created: 1778280935825
+      modified: 1778282445236
+      isPrivate: false
+      description: ""
+      sortKey: -1778280935825
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "name": "Roronoa Zoro",
+            "bounty": 180000000.0,
+            "crew": "Sombrero de Paja",
+            "isAlive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pirates
+    name: Get
+    meta:
+      id: req_fe1a80c89ab84f34a8dfa768ee297885
+      created: 1778281958247
+      modified: 1778282309131
+      isPrivate: false
+      description: ""
+      sortKey: -1778281958247
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pirates/d22f9f7b-2eae-408c-b0fa-096fcf74a452
+    name: Get by id
+    meta:
+      id: req_5104794bcbaa4da19839de7ac8c78651
+      created: 1778282288977
+      modified: 1778282373845
+      isPrivate: false
+      description: ""
+      sortKey: -1778282288977
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pirates/d22f9f7b-2eae-408c-b0fa-096fcf74a452
+    name: New Request
+    meta:
+      id: req_66c45c9a626b44889825d562588df00a
+      created: 1778282389336
+      modified: 1778282415888
+      isPrivate: false
+      description: ""
+      sortKey: -1778282389336
+    method: PUT
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/pirates/63b1a9d4-dfc9-4c31-ae78-0a577bd472a4
+    name: New Request
+    meta:
+      id: req_6ed7dd22db634568a984d7b075fa4045
+      created: 1778282459627
+      modified: 1778282491294
+      isPrivate: false
+      description: ""
+      sortKey: -1778282459627
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_6f75be52fba82a6b2280f5e3d37a8bc140c15733
+    created: 1778280927366
+    modified: 1778280927366
+environments:
+  name: Base Environment
+  meta:
+    id: env_6f75be52fba82a6b2280f5e3d37a8bc140c15733
+    created: 1778280927363
+    modified: 1778280927363
+    isPrivate: false

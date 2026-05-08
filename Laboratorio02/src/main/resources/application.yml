@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: productos
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productos
+    username: postgres
+    password: root
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
